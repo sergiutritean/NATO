@@ -8,6 +8,8 @@ import { HeaderComponent } from './home/header/header.component';
 import { ProfileComponent } from './home/header/profile/profile.component';
 import { FeedComponent } from './home/feed/feed.component';
 import { EventComponent } from './home/feed/event/event.component';
+import { LoginComponent } from "./login/login.component";
+import  { RegisterComponent } from "./register/register.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { EventComponent } from './home/feed/event/event.component';
     HeaderComponent,
     ProfileComponent,
     FeedComponent,
-    EventComponent
+    EventComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
