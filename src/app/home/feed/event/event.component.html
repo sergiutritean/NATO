@@ -4,13 +4,11 @@
      <div class="card blue lighten-2">
        <div class="card-content white-text">
          <span class="card-title">{{model.title}}</span>
-         <p id = "article">{{model.article}}</p>
+         <p id = "article" class = "article">{{model.article}}</p>
+         <p id = "ceva"></p>
        </div>
-       <div class="card-action collapsible" materialize="collapsible">
-         <a  class="collapsible-header">Vezi mai mult</a>
-         <div class="collapsible-body">
-           <p>{{model.fullArticle}}</p>
-         </div>
+       <div class="card-action">
+         <a routerLink="fullArticle" class="btn-flat" style="color: black">Vezi mai mult</a>
        </div>
      </div>
    </div>
@@ -38,3 +36,13 @@
     <div class="collapsible-body"><p>{{value}}</p></div>
   </li>
 </ul> -->
+
+<script>
+  function click() {
+    if (model.fullArticle !== '') {
+      document.getElementById("#article").innerHTML = model.fullArticle;
+    }
+    else document.getElementById("#article").innerHTML = "da";
+  }
+
+</script>

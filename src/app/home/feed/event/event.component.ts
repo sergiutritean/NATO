@@ -9,8 +9,6 @@ import {MaterializeAction} from "angular2-materialize";
 })
 export class EventComponent implements OnInit {
 
-  isOpen = false;
-
   // actions1 = new EventEmitter<string|MaterializeAction>();
 
   // open() {
@@ -26,6 +24,7 @@ export class EventComponent implements OnInit {
     "Curabitur iaculis consequat ex vitae fermentum. Sed ultrices aliquet hendrerit. Donec massa lacus, hendrerit sit amet dolor quis, pharetra condimentum leo. Aliquam et ex nibh. Donec molestie, dui in bibendum laoreet, sem quam consequat nibh, dignissim interdum nulla nisi id mi. Quisque finibus at quam eget dignissim. Nunc varius, enim non mollis varius, ante risus bibendum ligula, ac scelerisque lorem diam non risus. Curabitur malesuada finibus feugiat. Nunc sed imperdiet magna. Sed quis lacus accumsan, vestibulum magna faucibus, sollicitudin arcu. Nam tempus elementum egestas. In sagittis ac nunc sed convallis. Proin id est ut quam sollicitudin mollis vitae eget est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
     "\n" +
     "Maecenas non ligula eu ante tempus pretium ac non lorem. Nulla non dictum felis. Suspendisse a erat sodales, dictum tortor quis, convallis arcu. Praesent suscipit nec felis eu scelerisque. Nulla nec ex pulvinar, consectetur enim eu, eleifend lectus. Duis sit amet dolor sodales, faucibus ipsum eu, luctus mauris. Aenean ut libero ultrices, iaculis risus rhoncus, condimentum augue. Duis suscipit turpis dapibus tincidunt facilisis. Praesent ac feugiat justo, sed finibus diam.");
+
   constructor() { }
 
   ngOnInit() {
