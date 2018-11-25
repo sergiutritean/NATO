@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Input} from '@angular/core';
 import { EventModel} from "../../../../assets/event.model";
 import {MaterializeAction} from "angular2-materialize";
 
@@ -26,8 +26,18 @@ export class EventComponent implements OnInit {
     "Maecenas non ligula eu ante tempus pretium ac non lorem. Nulla non dictum felis. Suspendisse a erat sodales, dictum tortor quis, convallis arcu. Praesent suscipit nec felis eu scelerisque. Nulla nec ex pulvinar, consectetur enim eu, eleifend lectus. Duis sit amet dolor sodales, faucibus ipsum eu, luctus mauris. Aenean ut libero ultrices, iaculis risus rhoncus, condimentum augue. Duis suscipit turpis dapibus tincidunt facilisis. Praesent ac feugiat justo, sed finibus diam.");
 
   constructor() { }
+  isOpen = false;
+
+  @Input() event;
+
+  constructor() {
+   }
 
   ngOnInit() {
+    console.log(this.event);
   }
 
+  manevra() {
+    window.location = this.event.link;
+  }
 }

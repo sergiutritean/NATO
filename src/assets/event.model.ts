@@ -1,15 +1,17 @@
 export class EventModel {
 
-  public article: String;
-  public title: String;
-  public date: String;
-  public fullArticle: String;
+  public extra: any;
+  public link: string;
+  public src: string;
+  public title: string;
+  public closing_date: Date;
 
-  constructor(article: String, title: String, date: String, fullArticle: String) {
-    this.article = article;
+  constructor(extra: any, title: string, link: string, src: string) {
+    this.extra = extra;
     this.title = title;
-    this.date = date;
-    this.fullArticle = fullArticle;
+    this.closing_date = closing_date;
+    this.src = src;
+    this.link = link;
   }
 }
 
