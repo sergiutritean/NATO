@@ -10,6 +10,7 @@ import { FeedComponent } from './home/feed/feed.component';
 import { EventComponent } from './home/feed/event/event.component';
 import { LoginComponent } from "./login/login.component";
 import  { RegisterComponent } from "./register/register.component";
+import {EventModel} from "../assets/event.model";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import  { RegisterComponent } from "./register/register.component";
     FeedComponent,
     EventComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    // EventModel
   ],
   imports: [
     BrowserModule,
