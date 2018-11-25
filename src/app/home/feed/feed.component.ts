@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AngularFirestore } from '../../../../node_modules/@angular/fire/firestore';
 import { EventModel } from '../../../assets/event.model';
 import { Observable } from 'rxjs';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-feed',
@@ -871,5 +872,8 @@ export class FeedComponent implements OnInit {
 
   clear() {
     this.toShow = this.text;
+    console.log(this.text);
+    this.searchText = '';
+
   }
 }

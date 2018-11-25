@@ -11,9 +11,4 @@ import { Observable } from 'rxjs';
 })
 
 export class AppComponent {
-  title = 'atlantik';
-  items: Observable<any[]>;
-  constructor(db: AngularFirestore) {
-    this.items = db.collection('obiecte').valueChanges();
-  }
 }

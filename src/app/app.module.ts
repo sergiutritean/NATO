@@ -9,7 +9,8 @@ import { ProfileComponent } from './home/header/profile/profile.component';
 import { FeedComponent } from './home/feed/feed.component';
 import { EventComponent } from './home/feed/event/event.component';
 import { LoginComponent } from "./login/login.component";
-import { RegisterComponent } from "./register/register.component";
+import  { RegisterComponent } from "./register/register.component";
+import { FullArticleComponent } from './full-article/full-article.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -17,8 +18,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
-// import 'materialize-css';
-// import {MaterializeModule} from "angular2-materialize";
+import {DropdownModule} from "ngx-dropdown";
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { environment } from '../environments/environment';
     EventComponent,
     LoginComponent,
     RegisterComponent,
+    FullArticleComponent,
     // EventModel
   ],
   imports: [
-    // MaterializeModule,
+    DropdownModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'my-app-name'), // imports firebase/app needed for everything
@@ -45,3 +47,4 @@ import { environment } from '../environments/environment';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);

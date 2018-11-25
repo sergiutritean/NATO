@@ -1,13 +1,14 @@
 <nav>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper" style="margin-top: 5%;">
     <form>
       <div class="input-field" style="background-color: #118ACB">
         <input id="search" placeholder="Search" type="search" required (keypress)="onSearch($event)" #inputText>
         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-        <i class="material-icons" style="color: red" (onClick)="clear()">cancel</i>
       </div>
     </form>
   </div>
 </nav>
 
-<app-event *ngFor="let event of toShow['mnap']" [event]="event" ></app-event>
+<app-event *ngFor="let event of toShow['mnap']" [event]="event" [key]="'mnap'"></app-event>
+<app-event *ngFor="let event of toShow['nato_recruit']" [event]="event" [key]="'nato_recruit'"></app-event>
+<app-event *ngFor="let event of toShow['mnap']" [event]="event" [key]="'mnap'"></app-event>

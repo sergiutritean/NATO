@@ -6,7 +6,7 @@ export class EventModel {
   public title: string;
   public closing_date: Date;
 
-  constructor(extra: any, title: string, link: string, src: string, closing_date: Date) {
+  constructor(extra: any, title: string, link: string, src: string) {
     this.extra = extra;
     this.title = title;
     this.closing_date = closing_date;

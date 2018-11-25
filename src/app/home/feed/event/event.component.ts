@@ -1,6 +1,4 @@
 import {Component, EventEmitter, OnInit, Input} from '@angular/core';
-import { EventModel} from "../../../../assets/event.model";
-import {MaterializeAction} from "angular2-materialize";
 
 @Component({
   selector: 'app-event',
@@ -9,15 +7,15 @@ import {MaterializeAction} from "angular2-materialize";
 })
 export class EventComponent implements OnInit {
 
-  isOpen = false;
+  constructor() { }
 
   @Input() event;
-  
-  constructor() {
-   }
+  @Input() key;
+
+  color: string;
 
   ngOnInit() {
-    console.log(this.event);
+    this.color = (this.key === 'mnap'?'#118ACB':'#118ACB');
   }
 
   manevra() {
