@@ -11,11 +11,11 @@ export class EventComponent implements OnInit {
 
   isOpen = false;
 
-  actions1 = new EventEmitter<string|MaterializeAction>();
+  // actions1 = new EventEmitter<string|MaterializeAction>();
 
-  open() {
-    this.actions1.emit({action: "collapsible", params: ['open', 0]});
-  }
+  // open() {
+  //   this.actions1.emit({action: "collapsible", params: ['open', 0]});
+  // }
 
   model = new EventModel("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mattis augue. Suspendisse varius lacus elit, vel pellentesque velit mollis quis. Donec congue id massa eu molestie. Morbi at massa vel lorem rutrum faucibus. Vivamus at nisi id nisi mollis pellentesque sit amet at nisi. Pellentesque interdum lorem nulla, ut varius lacus feugiat a. Integer dignissim enim at nunc laoreet fringilla. Proin nec malesuada dolor, non vehicula ex. Etiam facilisis aliquam lorem sed blandit. Nulla mi sem, suscipit id mollis vel, ornare ac lacus.", "Lorem Ipsum", "20.11.2018", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at consequat neque. In mollis luctus sem, at aliquam turpis. Quisque et est tortor. Fusce tempus ligula justo, et semper lacus suscipit at. Cras felis arcu, mattis nec ultrices sit amet, facilisis sit amet risus. Nunc posuere ipsum quis facilisis sagittis. Quisque egestas diam sit amet porttitor ullamcorper. Nullam nec ligula venenatis nisl auctor maximus ac vel metus. Curabitur at justo feugiat, convallis sapien a, faucibus dolor. Nullam tempus metus et porttitor volutpat. Proin ut congue sapien.\n" +
     "\n" +

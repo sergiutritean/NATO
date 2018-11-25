@@ -1,32 +1,29 @@
-<div class="row">
-  <div class="col s12 m12">
-    <div class="card">
-      <div class="card-content">
-        <h4 class="center-align">Inregistrare</h4>
-        <div class="input-field">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Nume</label>
-        </div>
-        <div class="input-field">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Prenume</label>
-        </div>
-        <div class="input-field">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-        <div class="input-field">
-          <input id="password" type="password" class="validate">
-          <label for="password">Parola</label>
-        </div>
-        <div class="input-field">
-          <input id="confirmPassword" type="password" class="validate">
-          <label for="confirmPassword">Confirma parola</label>
-        </div>
-      </div>
-      <div class="card-action center-align">
-        <a routerLink=""><button class="btn">Inregistreaza-te</button></a>
-      </div>
+<form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="name"><b>Nume si prenume</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Parola</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirma parola</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Tine-ma minte
+    </label>
+
+    <p>Creand acest cont, esti de acord cu <a href="#" style="color:dodgerblue">Termenii & Conditiile</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
-</div>
+</form>
