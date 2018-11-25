@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AngularFirestore } from '../../../../node_modules/@angular/fire/firestore';
 import { EventModel } from '../../../assets/event.model';
 import { Observable } from 'rxjs';
@@ -11,6 +11,8 @@ import { Observable } from 'rxjs';
 export class FeedComponent implements OnInit {
 
   //events = new Observable<any[]>();
+
+  @ViewChild('inputText') searchText;
 
   text = {
     'mnap': [
@@ -835,12 +837,39 @@ export class FeedComponent implements OnInit {
     ],
   };
 
+  toShow = {};
+
   constructor(db: AngularFirestore) { 
     //this.events = db.collection('mnap').valueChanges();
   }
 
   ngOnInit() {
-
+    this.toShow = this.text;
   }
 
+  onSearch(event) {
+    let toSearch = this.searchText.nativeElement.value;
+    let toAdd = {};
+    for(let key in this.text) {
+      if(key === 'mnap') {
+        let array = this.text[key];
+        array = array.filter( event => {
+          return (event.title.search(toSearch)!=-1 || event.extra.description.search(toSearch)!=-1);
+        });
+        toAdd[key] = array;
+      } else {
+        let array = this.text[key];
+        array = array.filter( event => {
+          return (event.title.search(toSearch)!=-1);
+        });
+        toAdd[key] = array;
+      }
+    }
+    this.toShow = toAdd;
+    console.log(this.toShow);
+  }
+
+  clear() {
+    this.toShow = this.text;
+  }
 }
