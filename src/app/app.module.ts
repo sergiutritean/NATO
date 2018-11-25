@@ -20,6 +20,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import {DropdownModule} from "ngx-dropdown";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
     LoginComponent,
     RegisterComponent,
     FullArticleComponent,
+    InfoComponent,
     // EventModel
   ],
   imports: [
