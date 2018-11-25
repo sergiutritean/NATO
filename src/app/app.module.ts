@@ -11,7 +11,6 @@ import { EventComponent } from './home/feed/event/event.component';
 import { LoginComponent } from "./login/login.component";
 import  { RegisterComponent } from "./register/register.component";
 import { FullArticleComponent } from './full-article/full-article.component';
-import { RegisterComponent } from "./register/register.component";
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
