@@ -1,29 +1,22 @@
-<form action="action_page.php" style="border:1px solid #ccc">
+<form style="border:1px solid #ccc">
   <div class="container">
     <h1>Inregistrare</h1>
     <p>Completeaza acest formular pentru a-ti crea un cont</p>
     <hr>
-    <label for="name"><b>Nume si prenume</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
+    <input type="text" placeholder="Nume si prenume" name="name" required>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <label ><b>Email</b></label>
+    <input type="text" placeholder="Email" name="email" required>
 
-    <label for="psw"><b>Parola</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Parola" name="psw" required>
 
-    <label for="psw-repeat"><b>Confirma parola</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Tine-ma minte
-    </label>
+    <input type="password" placeholder="Confirma parola" name="psw-repeat" required>
 
     <p>Creand acest cont, esti de acord cu <a href="#" style="color:dodgerblue">Termenii & Conditiile</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <a routerLink="../login"><button type="button" class="cancelbtn">Anulare</button></a>
+      <a routerLink=""><button type="submit" class="signupbtn">Inregistreaza-te</button></a>
     </div>
   </div>
 </form>
