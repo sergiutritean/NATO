@@ -1,4 +1,9 @@
-* {box-sizing: border-box}
+.card {
+  width: 60%;
+  margin: auto;
+  float: none;
+  box-sizing: border-box;
+}
 
 /* Full-width input fields */
   input[type=text], input[type=password] {

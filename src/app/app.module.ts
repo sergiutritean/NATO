@@ -17,6 +17,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
+// import 'materialize-css';
+// import {MaterializeModule} from "angular2-materialize";
 
 @NgModule({
   declarations: [
@@ -27,9 +29,11 @@ import { environment } from '../environments/environment';
     FeedComponent,
     EventComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    // EventModel
   ],
   imports: [
+    // MaterializeModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'my-app-name'), // imports firebase/app needed for everything
